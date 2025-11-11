@@ -1,0 +1,50 @@
+name: gestor_hospitalar_app
+description: App completo para gestão e retirada de senhas hospitalares.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase (Backend em tempo real e Autenticação)
+  firebase_core: ^2.27.0
+  cloud_firestore: ^4.15.8
+  firebase_auth: ^4.17.8
+
+  # Conectividade e APIs
+  http: ^1.1.0
+
+  # Geolocalização e Mapas
+  geolocator: ^10.1.0
+  url_launcher: ^6.2.1
+
+  # Geração de Relatórios
+  pdf: ^3.10.7
+  printing: ^5.11.1
+  csv: ^5.1.1
+  file_saver: ^0.2.12 # <-- ADICIONADO AQUI
+  share_plus: ^7.2.1 # Mantido para outras funcionalidades futuras
+
+  # Gráficos e BI
+  fl_chart: ^0.65.0
+
+  # Utilitários
+  intl: ^0.18.1
+  path_provider: ^2.1.1 
+  path: ^1.9.0 
+  mask_text_input_formatter: ^2.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
